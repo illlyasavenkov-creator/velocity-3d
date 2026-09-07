@@ -22,7 +22,9 @@ html,body{
     color:white;
 }
 
-canvas{display:block}
+canvas{
+    display:block;
+}
 
 button,select,input{
     font-family:inherit;
@@ -642,6 +644,7 @@ select{
 /* ================= MOBILE ================= */
 
 @media(max-width:700px){
+
     .logo{
         left:25px;
         top:35px;
@@ -693,15 +696,29 @@ select{
     <div id="preview"></div>
 
     <div class="menuButtons">
-        <button class="menuBtn primary" onclick="startGame()">DRIVE</button>
-        <button class="menuBtn" onclick="openPanel('garage')">GARAGE</button>
-        <button class="menuBtn" onclick="openPanel('upgrades')">UPGRADES</button>
-        <button class="menuBtn" onclick="openPanel('settings')">SETTINGS</button>
-        <button class="menuBtn" onclick="openPanel('records')">RECORDS</button>
+        <button class="menuBtn primary" onclick="startGame()">
+            DRIVE
+        </button>
+
+        <button class="menuBtn" onclick="openPanel('garage')">
+            GARAGE
+        </button>
+
+        <button class="menuBtn" onclick="openPanel('upgrades')">
+            UPGRADES
+        </button>
+
+        <button class="menuBtn" onclick="openPanel('settings')">
+            SETTINGS
+        </button>
+
+        <button class="menuBtn" onclick="openPanel('records')">
+            RECORDS
+        </button>
     </div>
 
     <div class="menuInfo">
-        LOCAL BUILD • THREE.JS • v2.0
+        ONLINE BUILD • THREE.JS • v3.0
     </div>
 
 </div>
@@ -728,23 +745,32 @@ select{
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>POWER</span><span>78</span>
+                    <span>POWER</span>
+                    <span>78</span>
                 </div>
-                <div class="bar"><i style="width:78%"></i></div>
+                <div class="bar">
+                    <i style="width:78%"></i>
+                </div>
             </div>
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>SPEED</span><span>82</span>
+                    <span>SPEED</span>
+                    <span>82</span>
                 </div>
-                <div class="bar"><i style="width:82%"></i></div>
+                <div class="bar">
+                    <i style="width:82%"></i>
+                </div>
             </div>
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>HANDLING</span><span>70</span>
+                    <span>HANDLING</span>
+                    <span>70</span>
                 </div>
-                <div class="bar"><i style="width:70%"></i></div>
+                <div class="bar">
+                    <i style="width:70%"></i>
+                </div>
             </div>
         </div>
 
@@ -754,23 +780,32 @@ select{
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>POWER</span><span>86</span>
+                    <span>POWER</span>
+                    <span>86</span>
                 </div>
-                <div class="bar"><i style="width:86%"></i></div>
+                <div class="bar">
+                    <i style="width:86%"></i>
+                </div>
             </div>
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>SPEED</span><span>88</span>
+                    <span>SPEED</span>
+                    <span>88</span>
                 </div>
-                <div class="bar"><i style="width:88%"></i></div>
+                <div class="bar">
+                    <i style="width:88%"></i>
+                </div>
             </div>
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>HANDLING</span><span>77</span>
+                    <span>HANDLING</span>
+                    <span>77</span>
                 </div>
-                <div class="bar"><i style="width:77%"></i></div>
+                <div class="bar">
+                    <i style="width:77%"></i>
+                </div>
             </div>
         </div>
 
@@ -780,28 +815,36 @@ select{
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>POWER</span><span>96</span>
+                    <span>POWER</span>
+                    <span>96</span>
                 </div>
-                <div class="bar"><i style="width:96%"></i></div>
+                <div class="bar">
+                    <i style="width:96%"></i>
+                </div>
             </div>
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>SPEED</span><span>98</span>
+                    <span>SPEED</span>
+                    <span>98</span>
                 </div>
-                <div class="bar"><i style="width:98%"></i></div>
+                <div class="bar">
+                    <i style="width:98%"></i>
+                </div>
             </div>
 
             <div class="stat">
                 <div class="statLabel">
-                    <span>HANDLING</span><span>84</span>
+                    <span>HANDLING</span>
+                    <span>84</span>
                 </div>
-                <div class="bar"><i style="width:84%"></i></div>
+                <div class="bar">
+                    <i style="width:84%"></i>
+                </div>
             </div>
         </div>
 
     </div>
-
 </div>
 
 <!-- ================= UPGRADES ================= -->
@@ -829,9 +872,11 @@ select{
                 <div class="upgradeName">ENGINE</div>
                 <div class="level" id="engineLevel">LV. 1</div>
             </div>
+
             <div class="upgradeDesc">
                 More acceleration and higher top speed.
             </div>
+
             <button class="buy" onclick="buyUpgrade('engine')">
                 UPGRADE — $500
             </button>
@@ -842,9 +887,11 @@ select{
                 <div class="upgradeName">TRANSMISSION</div>
                 <div class="level" id="transLevel">LV. 1</div>
             </div>
+
             <div class="upgradeDesc">
                 Faster gear changes and acceleration.
             </div>
+
             <button class="buy" onclick="buyUpgrade('trans')">
                 UPGRADE — $500
             </button>
@@ -855,9 +902,11 @@ select{
                 <div class="upgradeName">HANDLING</div>
                 <div class="level" id="handlingLevel">LV. 1</div>
             </div>
+
             <div class="upgradeDesc">
                 Sharper steering and better control.
             </div>
+
             <button class="buy" onclick="buyUpgrade('handling')">
                 UPGRADE — $500
             </button>
@@ -868,9 +917,11 @@ select{
                 <div class="upgradeName">BRAKES</div>
                 <div class="level" id="brakesLevel">LV. 1</div>
             </div>
+
             <div class="upgradeDesc">
                 Shorter braking distance.
             </div>
+
             <button class="buy" onclick="buyUpgrade('brakes')">
                 UPGRADE — $500
             </button>
@@ -881,9 +932,11 @@ select{
                 <div class="upgradeName">NITRO</div>
                 <div class="level" id="nitroLevel">LV. 1</div>
             </div>
+
             <div class="upgradeDesc">
                 More nitrous capacity and power.
             </div>
+
             <button class="buy" onclick="buyUpgrade('nitro')">
                 UPGRADE — $500
             </button>
@@ -894,16 +947,17 @@ select{
                 <div class="upgradeName">AERO</div>
                 <div class="level" id="aeroLevel">LV. 1</div>
             </div>
+
             <div class="upgradeDesc">
                 Improves high-speed stability.
             </div>
+
             <button class="buy" onclick="buyUpgrade('aero')">
                 UPGRADE — $500
             </button>
         </div>
 
     </div>
-
 </div>
 
 <!-- ================= SETTINGS ================= -->
@@ -925,8 +979,11 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">GRAPHICS</div>
-                <div class="settingDesc">Rendering quality</div>
+                <div class="settingDesc">
+                    Rendering quality
+                </div>
             </div>
+
             <select id="graphics">
                 <option value="low">LOW</option>
                 <option value="medium" selected>MEDIUM</option>
@@ -937,27 +994,48 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">CAMERA DISTANCE</div>
-                <div class="settingDesc">Distance behind the car</div>
+                <div class="settingDesc">
+                    Distance behind the car
+                </div>
             </div>
-            <input class="range" id="cameraRange"
-                   type="range" min="6" max="14" value="9">
+
+            <input
+                class="range"
+                id="cameraRange"
+                type="range"
+                min="6"
+                max="14"
+                value="9"
+            >
         </div>
 
         <div class="setting">
             <div>
                 <div class="settingName">STEERING</div>
-                <div class="settingDesc">Steering sensitivity</div>
+                <div class="settingDesc">
+                    Steering sensitivity
+                </div>
             </div>
-            <input class="range" id="steerRange"
-                   type="range" min=".5" max="2"
-                   step=".1" value="1">
+
+            <input
+                class="range"
+                id="steerRange"
+                type="range"
+                min=".5"
+                max="2"
+                step=".1"
+                value="1"
+            >
         </div>
 
         <div class="setting">
             <div>
                 <div class="settingName">CAMERA SHAKE</div>
-                <div class="settingDesc">High-speed camera movement</div>
+                <div class="settingDesc">
+                    High-speed camera movement
+                </div>
             </div>
+
             <select id="shake">
                 <option value="on">ON</option>
                 <option value="off">OFF</option>
@@ -967,8 +1045,11 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">SHOW CONTROLS</div>
-                <div class="settingDesc">Display controls during driving</div>
+                <div class="settingDesc">
+                    Display controls during driving
+                </div>
             </div>
+
             <select id="showControls">
                 <option value="on">ON</option>
                 <option value="off">OFF</option>
@@ -978,7 +1059,9 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">WEATHER</div>
-                <div class="settingDesc">Road and atmosphere</div>
+                <div class="settingDesc">
+                    Road and atmosphere
+                </div>
             </div>
 
             <select id="weather">
@@ -997,7 +1080,6 @@ select{
         </button>
 
     </div>
-
 </div>
 
 <!-- ================= RECORDS ================= -->
@@ -1018,6 +1100,7 @@ select{
 
         <div class="upgrade">
             <div class="upgradeName">BEST DISTANCE</div>
+
             <div style="font-size:34px;margin-top:15px">
                 <span id="recordDistance">0</span> km
             </div>
@@ -1025,6 +1108,7 @@ select{
 
         <div class="upgrade">
             <div class="upgradeName">TOP SPEED</div>
+
             <div style="font-size:34px;margin-top:15px">
                 <span id="recordSpeed">0</span> km/h
             </div>
@@ -1032,6 +1116,7 @@ select{
 
         <div class="upgrade">
             <div class="upgradeName">CRASHES</div>
+
             <div style="font-size:34px;margin-top:15px">
                 <span id="recordCrashes">0</span>
             </div>
@@ -1039,13 +1124,13 @@ select{
 
         <div class="upgrade">
             <div class="upgradeName">RUNS</div>
+
             <div style="font-size:34px;margin-top:15px">
                 <span id="recordRuns">0</span>
             </div>
         </div>
 
     </div>
-
 </div>
 
 <!-- ================= HUD ================= -->
@@ -1053,6 +1138,7 @@ select{
 <div id="hud">
 
     <div class="topHud">
+
         <div class="hudBrand">
             VELOCITY<span>3D</span>
         </div>
@@ -1060,6 +1146,7 @@ select{
         <div id="weatherLabel">
             CLEAR
         </div>
+
     </div>
 
     <div class="controls" id="controls">
@@ -1071,17 +1158,21 @@ select{
     </div>
 
     <div id="netStatus">
-        MULTIPLAYER: LOCAL
+        MULTIPLAYER: CONNECTING
     </div>
 
     <div class="distance">
+
         <strong>
             <span id="distanceValue">0.00</span> KM
         </strong>
+
         <small>DISTANCE</small>
+
     </div>
 
     <div class="nitro">
+
         <div class="nitroText">
             <span>NITRO</span>
             <span id="nitroValue">100%</span>
@@ -1090,12 +1181,27 @@ select{
         <div class="nitroBar">
             <i id="nitroFill"></i>
         </div>
+
     </div>
 
     <div class="speedBox">
-        <div class="speedArc" id="speedArc"></div>
-        <div class="speedValue" id="speedValue">0</div>
-        <div class="speedUnit">KM/H</div>
+
+        <div
+            class="speedArc"
+            id="speedArc"
+        ></div>
+
+        <div
+            class="speedValue"
+            id="speedValue"
+        >
+            0
+        </div>
+
+        <div class="speedUnit">
+            KM/H
+        </div>
+
     </div>
 
 </div>
@@ -1114,9 +1220,17 @@ select{
             PAUSED
         </div>
 
-        <button onclick="resumeGame()">RESUME</button>
-        <button onclick="restartGame()">RESTART</button>
-        <button onclick="quitGame()">QUIT TO MENU</button>
+        <button onclick="resumeGame()">
+            RESUME
+        </button>
+
+        <button onclick="restartGame()">
+            RESTART
+        </button>
+
+        <button onclick="quitGame()">
+            QUIT TO MENU
+        </button>
 
     </div>
 
@@ -1163,6 +1277,26 @@ select{
 <script>
 
 /* =========================================================
+   VELOCITY 3D
+   MULTIPLAYER CONFIG
+========================================================= */
+
+/*
+   ПОКА ОСТАВЬ ТАК.
+
+   После того как Render создаст сервер,
+   сюда поставим:
+
+   const MULTIPLAYER_URL =
+       "wss://ТВОЙ-СЕРВЕР.onrender.com";
+
+   Больше ничего менять не понадобится.
+*/
+
+const MULTIPLAYER_URL = "";
+
+
+/* =========================================================
    THREE.JS LOADER
 ========================================================= */
 
@@ -1173,10 +1307,16 @@ select{
         if(typeof THREE==="undefined"){
 
             document.body.innerHTML=
-            '<div style="color:white;padding:40px;font:20px Arial">'+
-            'Three.js не найден.<br><br>'+
-            'Положи <b>three.min.js</b> рядом с index.html.'+
-            '</div>';
+                '<div style="' +
+                'color:white;' +
+                'padding:40px;' +
+                'font:20px Arial;' +
+                'background:#050608;' +
+                'height:100vh' +
+                '">' +
+                'Three.js не найден.<br><br>' +
+                'Положи <b>three.min.js</b> рядом с index.html.' +
+                '</div>';
 
             return;
         }
@@ -1194,9 +1334,24 @@ select{
 
         const c=document.createElement("script");
 
-        c.src="https://unpkg.com/three@0.156.0/build/three.min.js";
+        c.src=
+            "https://unpkg.com/three@0.156.0/build/three.min.js";
 
         c.onload=startThree;
+
+        c.onerror=()=>{
+
+            document.body.innerHTML=
+                '<div style="' +
+                'color:white;' +
+                'padding:40px;' +
+                'font:20px Arial;' +
+                'background:#050608;' +
+                'height:100vh' +
+                '">' +
+                'Не удалось загрузить Three.js.' +
+                '</div>';
+        };
 
         document.head.appendChild(c);
     };
@@ -1219,7 +1374,7 @@ function init(){
    SAVE
 ========================================================= */
 
-const SAVE_KEY="velocity3d_save_v3";
+const SAVE_KEY="velocity3d_save_v4";
 
 let save={
     money:2500,
@@ -1253,7 +1408,10 @@ let save={
 
 try{
 
-    const old=JSON.parse(localStorage.getItem(SAVE_KEY));
+    const old=
+        JSON.parse(
+            localStorage.getItem(SAVE_KEY)
+        );
 
     if(old){
 
@@ -1280,11 +1438,18 @@ try{
 
 }catch(e){}
 
+
 function saveGame(){
-    localStorage.setItem(
-        SAVE_KEY,
-        JSON.stringify(save)
-    );
+
+    try{
+
+        localStorage.setItem(
+            SAVE_KEY,
+            JSON.stringify(save)
+        );
+
+    }catch(e){}
+
 }
 
 
@@ -1313,6 +1478,7 @@ const nitroEffect=$("nitroEffect");
 const flash=$("flash");
 
 const weatherLabel=$("weatherLabel");
+const netStatus=$("netStatus");
 
 
 /* =========================================================
@@ -1345,6 +1511,23 @@ let topSpeed=0;
 
 let steer=0;
 let nitro=100;
+
+
+/* =========================================================
+   MULTIPLAYER
+========================================================= */
+
+let socket=null;
+let myPlayerId=null;
+
+let reconnectTimer=null;
+let reconnectAttempts=0;
+
+const remotePlayers=new Map();
+
+let lastNetworkUpdate=0;
+
+const NETWORK_UPDATE_RATE=50;
 
 
 /* =========================================================
@@ -1384,21 +1567,8 @@ const cars=[
 
 
 /* =========================================================
-   WORLD SPEED
+   WORLD
 ========================================================= */
-
-/*
-    Раньше:
-
-    speed * dt * .09
-
-    Поэтому 200 км/ч выглядели как черепаха.
-
-    Теперь скорость переводится:
-    km/h -> meters/sec
-
-    и уже потом двигается мир.
-*/
 
 const WORLD_SPEED_SCALE=.72;
 
@@ -1413,25 +1583,28 @@ const SEG_COUNT=16;
 
 scene=new THREE.Scene();
 
-scene.background=new THREE.Color(0x7b8790);
+scene.background=
+    new THREE.Color(0x7b8790);
 
-scene.fog=new THREE.Fog(
-    0x7b8790,
-    55,
-    430
-);
+scene.fog=
+    new THREE.Fog(
+        0x7b8790,
+        55,
+        430
+    );
 
 
 /* =========================================================
    CAMERA
 ========================================================= */
 
-camera=new THREE.PerspectiveCamera(
-    65,
-    innerWidth/innerHeight,
-    .1,
-    1500
-);
+camera=
+    new THREE.PerspectiveCamera(
+        65,
+        innerWidth/innerHeight,
+        .1,
+        1500
+    );
 
 camera.position.set(
     0,
@@ -1444,10 +1617,11 @@ camera.position.set(
    RENDERER
 ========================================================= */
 
-renderer=new THREE.WebGLRenderer({
-    antialias:true,
-    powerPreference:"high-performance"
-});
+renderer=
+    new THREE.WebGLRenderer({
+        antialias:true,
+        powerPreference:"high-performance"
+    });
 
 renderer.setSize(
     innerWidth,
@@ -1469,12 +1643,16 @@ renderer.shadowMap.enabled=
 renderer.shadowMap.type=
     THREE.PCFSoftShadowMap;
 
-if("outputColorSpace" in renderer)
+if("outputColorSpace" in renderer){
+
     renderer.outputColorSpace=
         THREE.SRGBColorSpace;
-else
+
+}else{
+
     renderer.outputEncoding=
         THREE.sRGBEncoding;
+}
 
 $("game").appendChild(
     renderer.domElement
@@ -1486,19 +1664,19 @@ $("game").appendChild(
 ========================================================= */
 
 const hemi=
-new THREE.HemisphereLight(
-    0xbfd7ff,
-    0x35402f,
-    2
-);
+    new THREE.HemisphereLight(
+        0xbfd7ff,
+        0x35402f,
+        2
+    );
 
 scene.add(hemi);
 
 const sun=
-new THREE.DirectionalLight(
-    0xffffff,
-    3
-);
+    new THREE.DirectionalLight(
+        0xffffff,
+        3
+    );
 
 sun.position.set(
     -80,
@@ -1531,72 +1709,72 @@ scene.add(sun);
 ========================================================= */
 
 const roadMat=
-new THREE.MeshStandardMaterial({
-    color:0x22252a,
-    roughness:.95
-});
+    new THREE.MeshStandardMaterial({
+        color:0x22252a,
+        roughness:.95
+    });
 
 const wetRoadMat=
-new THREE.MeshStandardMaterial({
-    color:0x151a1f,
-    roughness:.25,
-    metalness:.4
-});
+    new THREE.MeshStandardMaterial({
+        color:0x151a1f,
+        roughness:.25,
+        metalness:.4
+    });
 
 const grassMat=
-new THREE.MeshStandardMaterial({
-    color:0x334b2e,
-    roughness:1
-});
+    new THREE.MeshStandardMaterial({
+        color:0x334b2e,
+        roughness:1
+    });
 
 const shoulderMat=
-new THREE.MeshStandardMaterial({
-    color:0x68645c,
-    roughness:1
-});
+    new THREE.MeshStandardMaterial({
+        color:0x68645c,
+        roughness:1
+    });
 
 const lineMat=
-new THREE.MeshBasicMaterial({
-    color:0xe7e7dc
-});
+    new THREE.MeshBasicMaterial({
+        color:0xe7e7dc
+    });
 
 const yellowMat=
-new THREE.MeshBasicMaterial({
-    color:0xf1c32e
-});
+    new THREE.MeshBasicMaterial({
+        color:0xf1c32e
+    });
 
 const darkMat=
-new THREE.MeshStandardMaterial({
-    color:0x101216,
-    roughness:.35,
-    metalness:.7
-});
+    new THREE.MeshStandardMaterial({
+        color:0x101216,
+        roughness:.35,
+        metalness:.7
+    });
 
 const blackMat=
-new THREE.MeshStandardMaterial({
-    color:0x050506,
-    roughness:.8
-});
+    new THREE.MeshStandardMaterial({
+        color:0x050506,
+        roughness:.8
+    });
 
 const glassMat=
-new THREE.MeshPhysicalMaterial({
-    color:0x0c1720,
-    metalness:.1,
-    roughness:.12,
-    transmission:.05,
-    transparent:true,
-    opacity:.78
-});
+    new THREE.MeshPhysicalMaterial({
+        color:0x0c1720,
+        metalness:.1,
+        roughness:.12,
+        transmission:.05,
+        transparent:true,
+        opacity:.78
+    });
 
 const redLightMat=
-new THREE.MeshBasicMaterial({
-    color:0xff1710
-});
+    new THREE.MeshBasicMaterial({
+        color:0xff1710
+    });
 
 const whiteLightMat=
-new THREE.MeshBasicMaterial({
-    color:0xffffff
-});
+    new THREE.MeshBasicMaterial({
+        color:0xffffff
+    });
 
 
 /* =========================================================
@@ -1619,15 +1797,16 @@ scene.add(
 ========================================================= */
 
 const ground=
-new THREE.Mesh(
-    new THREE.PlaneGeometry(
-        5000,
-        5000
-    ),
-    grassMat
-);
+    new THREE.Mesh(
+        new THREE.PlaneGeometry(
+            5000,
+            5000
+        ),
+        grassMat
+    );
 
-ground.rotation.x=-Math.PI/2;
+ground.rotation.x=
+    -Math.PI/2;
 
 ground.position.y=-.03;
 
@@ -1644,36 +1823,35 @@ let roadSegments=[];
 
 for(let i=0;i<SEG_COUNT;i++){
 
-    const seg=new THREE.Group();
+    const seg=
+        new THREE.Group();
 
     const road=
-    new THREE.Mesh(
-        new THREE.BoxGeometry(
-            ROAD_WIDTH,
-            .18,
-            SEG_LEN
-        ),
-        roadMat
-    );
+        new THREE.Mesh(
+            new THREE.BoxGeometry(
+                ROAD_WIDTH,
+                .18,
+                SEG_LEN
+            ),
+            roadMat
+        );
 
     road.receiveShadow=true;
 
     seg.add(road);
 
 
-    /* shoulders */
-
     for(const x of [-8,8]){
 
         const sh=
-        new THREE.Mesh(
-            new THREE.BoxGeometry(
-                1.5,
-                .2,
-                SEG_LEN
-            ),
-            shoulderMat
-        );
+            new THREE.Mesh(
+                new THREE.BoxGeometry(
+                    1.5,
+                    .2,
+                    SEG_LEN
+                ),
+                shoulderMat
+            );
 
         sh.position.set(
             x,
@@ -1684,8 +1862,6 @@ for(let i=0;i<SEG_COUNT;i++){
         seg.add(sh);
     }
 
-
-    /* lane markings */
 
     for(
         const x of [-3.5,0,3.5]
@@ -1698,16 +1874,16 @@ for(let i=0;i<SEG_COUNT;i++){
         ){
 
             const d=
-            new THREE.Mesh(
-                new THREE.BoxGeometry(
-                    x===0?.18:.10,
-                    .035,
-                    7
-                ),
-                x===0
-                ?yellowMat
-                :lineMat
-            );
+                new THREE.Mesh(
+                    new THREE.BoxGeometry(
+                        x===0?.18:.10,
+                        .035,
+                        7
+                    ),
+                    x===0
+                    ?yellowMat
+                    :lineMat
+                );
 
             d.position.set(
                 x,
@@ -1720,8 +1896,6 @@ for(let i=0;i<SEG_COUNT;i++){
     }
 
 
-    /* close reflectors */
-
     for(
         const x of [-6.85,6.85]
     ){
@@ -1733,14 +1907,14 @@ for(let i=0;i<SEG_COUNT;i++){
         ){
 
             const m=
-            new THREE.Mesh(
-                new THREE.BoxGeometry(
-                    .12,
-                    .08,
-                    .45
-                ),
-                whiteLightMat
-            );
+                new THREE.Mesh(
+                    new THREE.BoxGeometry(
+                        .12,
+                        .08,
+                        .45
+                    ),
+                    whiteLightMat
+                );
 
             m.position.set(
                 x,
@@ -1769,20 +1943,21 @@ for(let i=0;i<SEG_COUNT;i++){
 
 function addTree(x,z,scale=1){
 
-    const g=new THREE.Group();
+    const g=
+        new THREE.Group();
 
     const trunk=
-    new THREE.Mesh(
-        new THREE.CylinderGeometry(
-            .18,
-            .25,
-            2.2,
-            8
-        ),
-        new THREE.MeshStandardMaterial({
-            color:0x5b3b23
-        })
-    );
+        new THREE.Mesh(
+            new THREE.CylinderGeometry(
+                .18,
+                .25,
+                2.2,
+                8
+            ),
+            new THREE.MeshStandardMaterial({
+                color:0x5b3b23
+            })
+        );
 
     trunk.position.y=1.1;
 
@@ -1790,16 +1965,16 @@ function addTree(x,z,scale=1){
 
 
     const crown=
-    new THREE.Mesh(
-        new THREE.DodecahedronGeometry(
-            1.45,
-            1
-        ),
-        new THREE.MeshStandardMaterial({
-            color:0x203b25,
-            roughness:1
-        })
-    );
+        new THREE.Mesh(
+            new THREE.DodecahedronGeometry(
+                1.45,
+                1
+            ),
+            new THREE.MeshStandardMaterial({
+                color:0x203b25,
+                roughness:1
+            })
+        );
 
     crown.position.y=2.8;
 
@@ -1825,18 +2000,19 @@ function addTree(x,z,scale=1){
 
 function addLamp(x,z){
 
-    const g=new THREE.Group();
+    const g=
+        new THREE.Group();
 
     const pole=
-    new THREE.Mesh(
-        new THREE.CylinderGeometry(
-            .07,
-            .09,
-            5,
-            8
-        ),
-        darkMat
-    );
+        new THREE.Mesh(
+            new THREE.CylinderGeometry(
+                .07,
+                .09,
+                5,
+                8
+            ),
+            darkMat
+        );
 
     pole.position.y=2.5;
 
@@ -1844,14 +2020,14 @@ function addLamp(x,z){
 
 
     const lamp=
-    new THREE.Mesh(
-        new THREE.BoxGeometry(
-            .4,
-            .15,
-            .35
-        ),
-        whiteLightMat
-    );
+        new THREE.Mesh(
+            new THREE.BoxGeometry(
+                .4,
+                .15,
+                .35
+            ),
+            whiteLightMat
+        );
 
     lamp.position.set(
         0,
@@ -1863,11 +2039,11 @@ function addLamp(x,z){
 
 
     const light=
-    new THREE.PointLight(
-        0xffd6a0,
-        1.3,
-        22
-    );
+        new THREE.PointLight(
+            0xffd6a0,
+            1.3,
+            22
+        );
 
     light.position.set(
         0,
@@ -1894,17 +2070,17 @@ function addLamp(x,z){
 function addMountain(x,z,s){
 
     const m=
-    new THREE.Mesh(
-        new THREE.ConeGeometry(
-            28*s,
-            45*s,
-            8
-        ),
-        new THREE.MeshStandardMaterial({
-            color:0x53616b,
-            roughness:1
-        })
-    );
+        new THREE.Mesh(
+            new THREE.ConeGeometry(
+                28*s,
+                45*s,
+                8
+            ),
+            new THREE.MeshStandardMaterial({
+                color:0x53616b,
+                roughness:1
+            })
+        );
 
     m.position.set(
         x,
@@ -1997,14 +2173,14 @@ function box(
     if(b){
 
         const shape=
-        new THREE.Shape();
+            new THREE.Shape();
 
         const r=
-        Math.min(
-            b,
-            w/4,
-            h/4
-        );
+            Math.min(
+                b,
+                w/4,
+                h/4
+            );
 
         shape.moveTo(
             -w/2+r,
@@ -2059,36 +2235,35 @@ function box(
             -h/2
         );
 
-
         const geo=
-        new THREE.ExtrudeGeometry(
-            shape,
-            {
-                depth:d,
-                bevelEnabled:true,
-                bevelSegments:2,
-                bevelSize:b*.35,
-                bevelThickness:b*.35
-            }
-        );
+            new THREE.ExtrudeGeometry(
+                shape,
+                {
+                    depth:d,
+                    bevelEnabled:true,
+                    bevelSegments:2,
+                    bevelSize:b*.35,
+                    bevelThickness:b*.35
+                }
+            );
 
         geo.center();
 
         mesh=
-        new THREE.Mesh(
-            geo,
-            mat
-        );
+            new THREE.Mesh(
+                geo,
+                mat
+            );
 
     }else{
 
         mesh=
-        new THREE.Mesh(
-            new THREE.BoxGeometry(
-                w,h,d
-            ),
-            mat
-        );
+            new THREE.Mesh(
+                new THREE.BoxGeometry(
+                    w,h,d
+                ),
+                mat
+            );
     }
 
     mesh.position.set(
@@ -2114,23 +2289,23 @@ function createCar(
 ){
 
     const car=
-    new THREE.Group();
+        new THREE.Group();
 
     car.userData.isPlayer=
         isPlayer;
 
 
     const bodyMat=
-    new THREE.MeshPhysicalMaterial({
-        color:data.color,
-        metalness:.72,
-        roughness:.2,
-        clearcoat:1,
-        clearcoatRoughness:.08
-    });
+        new THREE.MeshPhysicalMaterial({
+            color:data.color,
+            metalness:.72,
+            roughness:.2,
+            clearcoat:1,
+            clearcoatRoughness:.08
+        });
 
 
-    /* main body */
+    /* MAIN BODY */
 
     box(
         car,
@@ -2145,7 +2320,7 @@ function createCar(
     );
 
 
-    /* lower body */
+    /* LOWER BODY */
 
     box(
         car,
@@ -2160,7 +2335,7 @@ function createCar(
     );
 
 
-    /* hood */
+    /* HOOD */
 
     box(
         car,
@@ -2175,10 +2350,10 @@ function createCar(
     );
 
 
-    /* cabin */
+    /* CABIN */
 
     const cabinShape=
-    new THREE.Shape();
+        new THREE.Shape();
 
     cabinShape.moveTo(-.82,0);
     cabinShape.lineTo(-.62,.72);
@@ -2188,16 +2363,16 @@ function createCar(
 
 
     const cabinGeo=
-    new THREE.ExtrudeGeometry(
-        cabinShape,
-        {
-            depth:1.85,
-            bevelEnabled:true,
-            bevelSegments:2,
-            bevelSize:.05,
-            bevelThickness:.04
-        }
-    );
+        new THREE.ExtrudeGeometry(
+            cabinShape,
+            {
+                depth:1.85,
+                bevelEnabled:true,
+                bevelSegments:2,
+                bevelSize:.05,
+                bevelThickness:.04
+            }
+        );
 
     cabinGeo.rotateY(
         Math.PI/2
@@ -2207,10 +2382,10 @@ function createCar(
 
 
     const cabin=
-    new THREE.Mesh(
-        cabinGeo,
-        glassMat
-    );
+        new THREE.Mesh(
+            cabinGeo,
+            glassMat
+        );
 
     cabin.position.set(
         0,
@@ -2223,7 +2398,7 @@ function createCar(
     car.add(cabin);
 
 
-    /* roof */
+    /* ROOF */
 
     box(
         car,
@@ -2238,7 +2413,7 @@ function createCar(
     );
 
 
-    /* bumpers */
+    /* BUMPERS */
 
     box(
         car,
@@ -2265,7 +2440,7 @@ function createCar(
     );
 
 
-    /* front grille */
+    /* FRONT GRILLE */
 
     box(
         car,
@@ -2299,7 +2474,7 @@ function createCar(
     }
 
 
-    /* headlights */
+    /* HEADLIGHTS */
 
     for(
         const x of [-.7,.7]
@@ -2319,7 +2494,7 @@ function createCar(
     }
 
 
-    /* rear lights */
+    /* REAR LIGHTS */
 
     for(
         const x of [-.72,.72]
@@ -2339,16 +2514,15 @@ function createCar(
     }
 
 
-    /* wheels */
+    /* WHEELS */
 
     const wheelGeo=
-    new THREE.CylinderGeometry(
-        .42,
-        .42,
-        .28,
-        20
-    );
-
+        new THREE.CylinderGeometry(
+            .42,
+            .42,
+            .28,
+            20
+        );
 
     for(
         const x of [-1.08,1.08]
@@ -2359,10 +2533,10 @@ function createCar(
         ){
 
             const tire=
-            new THREE.Mesh(
-                wheelGeo,
-                blackMat
-            );
+                new THREE.Mesh(
+                    wheelGeo,
+                    blackMat
+                );
 
             tire.rotation.z=
                 Math.PI/2;
@@ -2379,19 +2553,19 @@ function createCar(
 
 
             const rim=
-            new THREE.Mesh(
-                new THREE.CylinderGeometry(
-                    .21,
-                    .21,
-                    .30,
-                    16
-                ),
-                new THREE.MeshStandardMaterial({
-                    color:0x8c929a,
-                    metalness:.9,
-                    roughness:.2
-                })
-            );
+                new THREE.Mesh(
+                    new THREE.CylinderGeometry(
+                        .21,
+                        .21,
+                        .30,
+                        16
+                    ),
+                    new THREE.MeshStandardMaterial({
+                        color:0x8c929a,
+                        metalness:.9,
+                        roughness:.2
+                    })
+                );
 
             rim.rotation.z=
                 Math.PI/2;
@@ -2407,7 +2581,7 @@ function createCar(
     }
 
 
-    /* spoiler */
+    /* SPOILER */
 
     if(isPlayer){
 
@@ -2441,7 +2615,7 @@ function createCar(
     }
 
 
-    /* mirrors */
+    /* MIRRORS */
 
     for(
         const x of [-1.13,1.13]
@@ -2461,22 +2635,22 @@ function createCar(
     }
 
 
-    /* exhaust */
+    /* EXHAUST */
 
     for(
         const x of [-.62,.62]
     ){
 
         const ex=
-        new THREE.Mesh(
-            new THREE.CylinderGeometry(
-                .09,
-                .09,
-                .22,
-                10
-            ),
-            darkMat
-        );
+            new THREE.Mesh(
+                new THREE.CylinderGeometry(
+                    .09,
+                    .09,
+                    .22,
+                    10
+                ),
+                darkMat
+            );
 
         ex.rotation.x=
             Math.PI/2;
@@ -2490,7 +2664,6 @@ function createCar(
         car.add(ex);
     }
 
-
     return car;
 }
 
@@ -2500,10 +2673,10 @@ function createCar(
 ========================================================= */
 
 player=
-createCar(
-    cars[save.selectedCar],
-    true
-);
+    createCar(
+        cars[save.selectedCar],
+        true
+    );
 
 player.position.set(
     -1.75,
@@ -2538,17 +2711,15 @@ function spawnTraffic(){
             );
 
         const mesh=
-        createCar(
-            cars[idx],
-            false
-        );
-
+            createCar(
+                cars[idx],
+                false
+            );
 
         const lanes=
             oncoming
             ?[1.75,3.5]
             :[-3.5,-1.75];
-
 
         mesh.position.set(
             lanes[
@@ -2562,14 +2733,12 @@ function spawnTraffic(){
             Math.random()*120
         );
 
-
         mesh.rotation.y=
             oncoming
             ?Math.PI
             :0;
 
         trafficGroup.add(mesh);
-
 
         traffic.push({
             mesh,
@@ -2592,7 +2761,7 @@ const speedLineObjects=[];
 for(let i=0;i<60;i++){
 
     const el=
-    document.createElement("div");
+        document.createElement("div");
 
     el.className="speedLine";
 
@@ -2611,17 +2780,16 @@ for(let i=0;i<60;i++){
 function updateSpeedLines(dt){
 
     const n=
-    THREE.MathUtils.clamp(
-        (speed-105)/220,
-        0,
-        1
-    );
+        THREE.MathUtils.clamp(
+            (speed-105)/220,
+            0,
+            1
+        );
 
     const active=
         keys.Space &&
         nitro>0 &&
         speed>50;
-
 
     speedLinesEl.style.opacity=
         n*
@@ -2638,7 +2806,6 @@ function updateSpeedLines(dt){
             (speed-90)/180
         )
         :0;
-
 
     if(n<=0)return;
 
@@ -2683,7 +2850,6 @@ function updateSpeedLines(dt){
                 n*1500+
                 Math.random()*600;
 
-
             l.el.style.left=
                 l.x+"px";
 
@@ -2696,7 +2862,6 @@ function updateSpeedLines(dt){
             l.el.style.opacity=
                 (.2+n*.8).toString();
         }
-
 
         l.y+=
             l.v*
@@ -2714,12 +2879,12 @@ function updateSpeedLines(dt){
 ========================================================= */
 
 const rainGroup=
-new THREE.Group();
+    new THREE.Group();
 
 scene.add(rainGroup);
 
 const rainGeo=
-new THREE.BufferGeometry();
+    new THREE.BufferGeometry();
 
 const rainCount=
     save.settings.graphics==="high"
@@ -2744,7 +2909,6 @@ for(let i=0;i<rainCount;i++){
         Math.random()*130-90;
 }
 
-
 rainGeo.setAttribute(
     "position",
     new THREE.BufferAttribute(
@@ -2753,21 +2917,19 @@ rainGeo.setAttribute(
     )
 );
 
-
 const rainMat=
-new THREE.PointsMaterial({
-    color:0x9fcfff,
-    size:.09,
-    transparent:true,
-    opacity:.7
-});
-
+    new THREE.PointsMaterial({
+        color:0x9fcfff,
+        size:.09,
+        transparent:true,
+        opacity:.7
+    });
 
 const rainPoints=
-new THREE.Points(
-    rainGeo,
-    rainMat
-);
+    new THREE.Points(
+        rainGeo,
+        rainMat
+    );
 
 rainGroup.add(
     rainPoints
@@ -2856,7 +3018,7 @@ function setWeather(mode){
 
 
     const p=
-        presets[mode] ||
+        presets[mode]||
         presets.clear;
 
 
@@ -2883,29 +3045,31 @@ function setWeather(mode){
 
 
     rainGroup.visible=
-        mode==="rain" ||
+        mode==="rain"||
         mode==="storm";
 
 
     roadSegments.forEach(
         s=>{
+
             s.children[0].material=
-                mode==="rain" ||
+                mode==="rain"||
                 mode==="storm"
                 ?wetRoadMat
                 :roadMat;
         }
     );
 
-
     saveGame();
 }
 
 $("weather").addEventListener(
     "change",
-    e=>setWeather(
-        e.target.value
-    )
+    e=>{
+        setWeather(
+            e.target.value
+        );
+    }
 );
 
 
@@ -2958,9 +3122,11 @@ function createPreview(){
     );
 
 
-    if("outputColorSpace" in pr)
+    if("outputColorSpace" in pr){
+
         pr.outputColorSpace=
             THREE.SRGBColorSpace;
+    }
 
 
     document
@@ -3035,7 +3201,639 @@ function createPreview(){
 
 
 /* =========================================================
-   START
+   MULTIPLAYER HELPERS
+========================================================= */
+
+function setNetworkStatus(
+    text,
+    color="#59616c"
+){
+
+    netStatus.textContent=
+        text;
+
+    netStatus.style.color=
+        color;
+}
+
+
+function multiplayerEnabled(){
+
+    return (
+        typeof MULTIPLAYER_URL==="string" &&
+        MULTIPLAYER_URL.trim().length>0
+    );
+}
+
+
+/* =========================================================
+   CONNECT MULTIPLAYER
+========================================================= */
+
+function connectMultiplayer(){
+
+    if(!multiplayerEnabled()){
+
+        setNetworkStatus(
+            "MULTIPLAYER: SERVER NOT SET",
+            "#737984"
+        );
+
+        return;
+    }
+
+
+    if(
+        socket &&
+        (
+            socket.readyState===WebSocket.OPEN ||
+            socket.readyState===WebSocket.CONNECTING
+        )
+    ){
+
+        return;
+    }
+
+
+    clearTimeout(
+        reconnectTimer
+    );
+
+
+    setNetworkStatus(
+        "MULTIPLAYER: CONNECTING",
+        "#f0b84a"
+    );
+
+
+    try{
+
+        socket=
+            new WebSocket(
+                MULTIPLAYER_URL
+            );
+
+
+        socket.onopen=()=>{
+
+            reconnectAttempts=0;
+
+            setNetworkStatus(
+                "MULTIPLAYER: ONLINE",
+                "#45e08a"
+            );
+
+            console.log(
+                "[VELOCITY] Multiplayer connected"
+            );
+        };
+
+
+        socket.onmessage=
+            event=>{
+
+                let data;
+
+                try{
+
+                    data=
+                        JSON.parse(
+                            event.data
+                        );
+
+                }catch{
+
+                    return;
+                }
+
+
+                if(data.type==="welcome"){
+
+                    myPlayerId=
+                        data.id;
+
+                    console.log(
+                        "[VELOCITY] My ID:",
+                        myPlayerId
+                    );
+
+                    return;
+                }
+
+
+                if(
+                    data.type==="playerJoined"
+                ){
+
+                    addRemotePlayer(
+                        data.player
+                    );
+
+                    return;
+                }
+
+
+                if(
+                    data.type==="playerUpdate"
+                ){
+
+                    updateRemotePlayer(
+                        data.player
+                    );
+
+                    return;
+                }
+
+
+                if(
+                    data.type==="playerLeft"
+                ){
+
+                    removeRemotePlayer(
+                        data.id
+                    );
+
+                    return;
+                }
+
+
+                if(
+                    data.type==="pong"
+                ){
+
+                    return;
+                }
+            };
+
+
+        socket.onclose=()=>{
+
+            setNetworkStatus(
+                "MULTIPLAYER: OFFLINE",
+                "#ff4027"
+            );
+
+            socket=null;
+
+            reconnectAttempts++;
+
+            const delay=
+                Math.min(
+                    10000,
+                    1000+
+                    reconnectAttempts*1000
+                );
+
+            reconnectTimer=
+                setTimeout(
+                    connectMultiplayer,
+                    delay
+                );
+
+            console.log(
+                "[VELOCITY] Multiplayer disconnected"
+            );
+        };
+
+
+        socket.onerror=
+            error=>{
+
+                console.warn(
+                    "[VELOCITY] Multiplayer error",
+                    error
+                );
+
+                setNetworkStatus(
+                    "MULTIPLAYER: ERROR",
+                    "#ff4027"
+                );
+            };
+
+    }catch(error){
+
+        console.error(
+            "[VELOCITY] Connection error:",
+            error
+        );
+
+        setNetworkStatus(
+            "MULTIPLAYER: ERROR",
+            "#ff4027"
+        );
+    }
+}
+
+
+/* =========================================================
+   SEND PLAYER UPDATE
+========================================================= */
+
+function sendPlayerUpdate(force=false){
+
+    if(
+        !socket ||
+        socket.readyState!==WebSocket.OPEN ||
+        !gameRunning ||
+        paused ||
+        !player
+    ){
+
+        return;
+    }
+
+
+    const now=
+        performance.now();
+
+
+    if(
+        !force &&
+        now-lastNetworkUpdate<
+        NETWORK_UPDATE_RATE
+    ){
+
+        return;
+    }
+
+
+    lastNetworkUpdate=
+        now;
+
+
+    const packet={
+
+        type:"update",
+
+        x:Number(
+            player.position.x.toFixed(4)
+        ),
+
+        distance:Number(
+            distance.toFixed(5)
+        ),
+
+        rotationY:Number(
+            player.rotation.y.toFixed(4)
+        ),
+
+        rotationZ:Number(
+            player.rotation.z.toFixed(4)
+        ),
+
+        speed:Number(
+            speed.toFixed(2)
+        ),
+
+        car:Number(
+            save.selectedCar
+        )
+    };
+
+
+    try{
+
+        socket.send(
+            JSON.stringify(packet)
+        );
+
+    }catch(e){}
+}
+
+
+/* =========================================================
+   ADD REMOTE PLAYER
+========================================================= */
+
+function addRemotePlayer(data){
+
+    if(
+        !data ||
+        !data.id ||
+        data.id===myPlayerId
+    ){
+
+        return;
+    }
+
+
+    if(
+        remotePlayers.has(data.id)
+    ){
+
+        updateRemotePlayer(
+            data
+        );
+
+        return;
+    }
+
+
+    const carIndex=
+        THREE.MathUtils.clamp(
+            Math.floor(
+                Number(data.car)||0
+            ),
+            0,
+            cars.length-1
+        );
+
+
+    const mesh=
+        createCar(
+            cars[carIndex],
+            false
+        );
+
+
+    mesh.position.set(
+        Number(data.x)||0,
+        .05,
+        player
+            ?player.position.z
+            :7
+    );
+
+
+    mesh.rotation.y=
+        Number(data.rotationY)||0;
+
+    mesh.rotation.z=
+        Number(data.rotationZ)||0;
+
+
+    trafficGroup.add(
+        mesh
+    );
+
+
+    remotePlayers.set(
+        data.id,
+        {
+            mesh,
+
+            targetX:
+                Number(data.x)||0,
+
+            targetZ:
+                player
+                ?player.position.z
+                :7,
+
+            targetRotationY:
+                Number(data.rotationY)||0,
+
+            targetRotationZ:
+                Number(data.rotationZ)||0,
+
+            distance:
+                Number(data.distance)||0,
+
+            speed:
+                Number(data.speed)||0,
+
+            car:
+                carIndex
+        }
+    );
+
+
+    console.log(
+        "[VELOCITY] Player joined:",
+        data.id
+    );
+}
+
+
+/* =========================================================
+   UPDATE REMOTE PLAYER
+========================================================= */
+
+function updateRemotePlayer(data){
+
+    if(
+        !data ||
+        !data.id ||
+        data.id===myPlayerId
+    ){
+
+        return;
+    }
+
+
+    if(
+        !remotePlayers.has(data.id)
+    ){
+
+        addRemotePlayer(
+            data
+        );
+
+        return;
+    }
+
+
+    const remote=
+        remotePlayers.get(
+            data.id
+        );
+
+
+    remote.targetX=
+        Number(data.x)||0;
+
+    remote.targetRotationY=
+        Number(data.rotationY)||0;
+
+    remote.targetRotationZ=
+        Number(data.rotationZ)||0;
+
+    remote.distance=
+        Number(data.distance)||0;
+
+    remote.speed=
+        Number(data.speed)||0;
+
+
+    /*
+       У каждого игрока своя дистанция.
+       Поэтому здесь рассчитываем положение
+       относительно нашей дистанции.
+    */
+
+    const relativeDistance=
+        remote.distance-
+        distance;
+
+
+    /*
+       20 — визуальный масштаб дистанции.
+       Чем больше разница дистанции,
+       тем дальше машина.
+    */
+
+    remote.targetZ=
+        player.position.z-
+        relativeDistance*20;
+
+
+    /*
+       Не даём игрокам улетать
+       на бесконечную дистанцию.
+    */
+
+    remote.targetZ=
+        THREE.MathUtils.clamp(
+            remote.targetZ,
+            player.position.z-1800,
+            player.position.z+500
+        );
+}
+
+
+/* =========================================================
+   UPDATE REMOTE PLAYERS
+========================================================= */
+
+function updateRemotePlayers(dt){
+
+    for(
+        const remote of remotePlayers.values()
+    ){
+
+        const mesh=
+            remote.mesh;
+
+
+        mesh.position.x=
+            THREE.MathUtils.lerp(
+                mesh.position.x,
+                remote.targetX,
+                Math.min(
+                    1,
+                    dt*12
+                )
+            );
+
+
+        mesh.position.z=
+            THREE.MathUtils.lerp(
+                mesh.position.z,
+                remote.targetZ,
+                Math.min(
+                    1,
+                    dt*8
+                )
+            );
+
+
+        mesh.rotation.y=
+            THREE.MathUtils.lerp(
+                mesh.rotation.y,
+                remote.targetRotationY,
+                Math.min(
+                    1,
+                    dt*10
+                )
+            );
+
+
+        mesh.rotation.z=
+            THREE.MathUtils.lerp(
+                mesh.rotation.z,
+                remote.targetRotationZ,
+                Math.min(
+                    1,
+                    dt*10
+                )
+            );
+
+
+        /*
+           Если игрок очень далеко,
+           прячем его до следующего обновления.
+        */
+
+        mesh.visible=
+            Math.abs(
+                mesh.position.z-
+                player.position.z
+            )<1800;
+    }
+}
+
+
+/* =========================================================
+   REMOVE REMOTE PLAYER
+========================================================= */
+
+function removeRemotePlayer(id){
+
+    const remote=
+        remotePlayers.get(id);
+
+    if(!remote){
+
+        return;
+    }
+
+
+    trafficGroup.remove(
+        remote.mesh
+    );
+
+
+    /*
+       Полностью освобождаем геометрию
+       и материалы машины.
+    */
+
+    remote.mesh.traverse(
+        obj=>{
+
+            if(
+                obj.geometry &&
+                !obj.userData.keepGeometry
+            ){
+
+                obj.geometry.dispose();
+            }
+
+            if(
+                obj.material &&
+                !obj.material.userData?.shared
+            ){
+
+                if(
+                    Array.isArray(
+                        obj.material
+                    )
+                ){
+
+                    obj.material.forEach(
+                        m=>m.dispose()
+                    );
+
+                }else{
+
+                    obj.material.dispose();
+                }
+            }
+        }
+    );
+
+
+    remotePlayers.delete(id);
+
+    console.log(
+        "[VELOCITY] Player left:",
+        id
+    );
+}
+
+
+/* =========================================================
+   START GAME
 ========================================================= */
 
 function startGame(){
@@ -3084,6 +3882,7 @@ function startGame(){
 
     roadSegments.forEach(
         (s,i)=>{
+
             s.position.z=
                 -SEG_LEN/2-
                 i*SEG_LEN;
@@ -3094,11 +3893,30 @@ function startGame(){
     spawnTraffic();
 
 
+    /*
+       Старых удалённых игроков убираем.
+    */
+
+    for(
+        const id of remotePlayers.keys()
+    ){
+
+        removeRemotePlayer(id);
+    }
+
+
     save.records.runs++;
 
     saveGame();
+
+
+    sendPlayerUpdate(true);
 }
 
+
+/* =========================================================
+   RESTART
+========================================================= */
 
 function restartGame(){
 
@@ -3114,6 +3932,10 @@ function restartGame(){
 }
 
 
+/* =========================================================
+   RESUME
+========================================================= */
+
 function resumeGame(){
 
     paused=false;
@@ -3123,13 +3945,20 @@ function resumeGame(){
     );
 
     clock.getDelta();
+
+    sendPlayerUpdate(true);
 }
 
+
+/* =========================================================
+   QUIT
+========================================================= */
 
 function quitGame(){
 
     gameRunning=false;
     paused=false;
+
 
     pauseEl.classList.remove(
         "active"
@@ -3143,9 +3972,18 @@ function quitGame(){
         "active"
     );
 
+
     speedLinesEl.style.opacity=0;
     speedVignette.style.opacity=0;
     nitroEffect.style.opacity=0;
+
+
+    /*
+       Останавливаем отправку,
+       но сам WebSocket оставляем подключенным,
+       чтобы следующий DRIVE работал сразу.
+    */
+
 
     menu.style.display="block";
 }
@@ -3156,6 +3994,12 @@ function quitGame(){
 ========================================================= */
 
 function crash(){
+
+    if(!gameRunning){
+
+        return;
+    }
+
 
     gameRunning=false;
 
@@ -3208,6 +4052,14 @@ function crash(){
     saveGame();
 
 
+    /*
+       Отправляем последнее положение
+       перед окончанием заезда.
+    */
+
+    sendPlayerUpdate(true);
+
+
     setTimeout(
         ()=>{
             gameOverEl.classList.add(
@@ -3230,6 +4082,7 @@ addEventListener(
     e=>{
 
         keys[e.code]=true;
+
 
         if(
             [
@@ -3256,6 +4109,11 @@ addEventListener(
                 "active",
                 paused
             );
+
+            if(!paused){
+
+                sendPlayerUpdate(true);
+            }
         }
     }
 );
@@ -3264,6 +4122,7 @@ addEventListener(
 addEventListener(
     "keyup",
     e=>{
+
         keys[e.code]=false;
     }
 );
@@ -3278,7 +4137,10 @@ function updatePhysics(dt){
     if(
         !gameRunning ||
         paused
-    )return;
+    ){
+
+        return;
+    }
 
 
     const c=
@@ -3312,10 +4174,10 @@ function updatePhysics(dt){
         tb;
 
 
-    /* throttle */
+    /* THROTTLE */
 
     if(
-        keys.KeyW ||
+        keys.KeyW||
         keys.ArrowUp
     ){
 
@@ -3333,10 +4195,10 @@ function updatePhysics(dt){
     }
 
 
-    /* brake */
+    /* BRAKE */
 
     if(
-        keys.KeyS ||
+        keys.KeyS||
         keys.ArrowDown
     ){
 
@@ -3349,11 +4211,11 @@ function updatePhysics(dt){
     }
 
 
-    /* nitro */
+    /* NITRO */
 
     const usingNitro=
-        keys.Space &&
-        nitro>0 &&
+        keys.Space&&
+        nitro>0&&
         speed>50;
 
 
@@ -3395,7 +4257,7 @@ function updatePhysics(dt){
     }
 
 
-    /* acceleration */
+    /* ACCELERATION */
 
     const accel=
         c.accel*
@@ -3425,21 +4287,27 @@ function updatePhysics(dt){
     }
 
 
-    /* steering */
+    /* STEERING */
 
     let si=0;
 
 
     if(
-        keys.KeyA ||
+        keys.KeyA||
         keys.ArrowLeft
-    )si-=1;
+    ){
+
+        si-=1;
+    }
 
 
     if(
-        keys.KeyD ||
+        keys.KeyD||
         keys.ArrowRight
-    )si+=1;
+    ){
+
+        si+=1;
+    }
 
 
     const steering=
@@ -3481,7 +4349,7 @@ function updatePhysics(dt){
         );
 
 
-    /* stats */
+    /* STATS */
 
     distance+=
         speed*
@@ -3499,7 +4367,7 @@ function updatePhysics(dt){
     }
 
 
-    /* car roll */
+    /* CAR ROLL */
 
     player.rotation.z=
         THREE.MathUtils.lerp(
@@ -3517,9 +4385,7 @@ function updatePhysics(dt){
         );
 
 
-    /* =====================================================
-       REAL WORLD MOVEMENT
-    ===================================================== */
+    /* WORLD MOVEMENT */
 
     let movement=
         (speed/3.6)*
@@ -3533,7 +4399,7 @@ function updatePhysics(dt){
     }
 
 
-    /* road */
+    /* ROAD */
 
     roadSegments.forEach(
         s=>{
@@ -3555,7 +4421,7 @@ function updatePhysics(dt){
     );
 
 
-    /* scenery */
+    /* SCENERY */
 
     sceneryGroup.children.forEach(
         o=>{
@@ -3565,29 +4431,22 @@ function updatePhysics(dt){
 
 
             if(
-                o.position.z>100
+                o.position.z>
+                100
             ){
 
                 o.position.z-=
-                    o.userData.recycle ||
+                    o.userData.recycle||
                     1400;
             }
         }
     );
 
 
-    /* traffic */
+    /* TRAFFIC */
 
     traffic.forEach(
         t=>{
-
-            /*
-                Same direction:
-                world movement minus NPC movement
-
-                Oncoming:
-                world movement plus NPC movement
-            */
 
             const npc=
                 (
@@ -3640,13 +4499,13 @@ function updatePhysics(dt){
             }
 
 
-            /* collision */
+            /* COLLISION */
 
             if(
                 Math.abs(
                     player.position.x-
                     t.mesh.position.x
-                )<1.65 &&
+                )<1.65&&
 
                 Math.abs(
                     player.position.z-
@@ -3662,7 +4521,7 @@ function updatePhysics(dt){
 
 
     /* =====================================================
-       RAIN MOVEMENT
+       RAIN
     ===================================================== */
 
     if(rainGroup.visible){
@@ -3750,8 +4609,6 @@ function updatePhysics(dt){
     camera.updateProjectionMatrix();
 
 
-    /* camera distance */
-
     const cd=
         parseFloat(
             $("cameraRange").value
@@ -3795,10 +4652,8 @@ function updatePhysics(dt){
         );
 
 
-    /* smooth high speed shake */
-
     if(
-        $("shake").value==="on" &&
+        $("shake").value==="on"&&
         speed>150
     ){
 
@@ -3826,8 +4681,6 @@ function updatePhysics(dt){
             .025;
     }
 
-
-    /* look further ahead at high speed */
 
     camera.lookAt(
         player.position.x,
@@ -3878,7 +4731,7 @@ function updateHUD(){
 
 
 /* =========================================================
-   MENU FUNCTIONS
+   MENU
 ========================================================= */
 
 function openPanel(id){
@@ -3892,9 +4745,11 @@ function openPanel(id){
                 )
         );
 
+
     $(id).classList.add(
         "active"
     );
+
 
     updateMenuUI();
 }
@@ -3949,6 +4804,45 @@ function selectCar(i){
     }
 
 
+    /*
+       Если игрок уже находится в игре,
+       меняем и его машину.
+    */
+
+    if(player){
+
+        const oldPosition=
+            player.position.clone();
+
+        const oldRotation=
+            player.rotation.clone();
+
+        scene.remove(
+            player
+        );
+
+
+        player=
+            createCar(
+                cars[i],
+                true
+            );
+
+
+        player.position.copy(
+            oldPosition
+        );
+
+        player.rotation.copy(
+            oldRotation
+        );
+
+        scene.add(
+            player
+        );
+    }
+
+
     saveGame();
 }
 
@@ -3990,7 +4884,6 @@ function buyUpgrade(type){
 
     save.upgrades[type]++;
 
-
     saveGame();
 
     updateMenuUI();
@@ -4024,13 +4917,16 @@ function updateMenuUI(){
     $("recordDistance").textContent=
         save.records.distance.toFixed(2);
 
+
     $("recordSpeed").textContent=
         Math.round(
             save.records.speed
         );
 
+
     $("recordCrashes").textContent=
         save.records.crashes;
+
 
     $("recordRuns").textContent=
         save.records.runs;
@@ -4039,17 +4935,22 @@ function updateMenuUI(){
     $("graphics").value=
         save.settings.graphics;
 
+
     $("cameraRange").value=
         save.settings.camera;
+
 
     $("steerRange").value=
         save.settings.steer;
 
+
     $("shake").value=
         save.settings.shake;
 
+
     $("showControls").value=
         save.settings.controls;
+
 
     $("weather").value=
         save.settings.weather;
@@ -4230,7 +5131,7 @@ function animate(){
 
 
     if(
-        gameRunning &&
+        gameRunning&&
         !paused
     ){
 
@@ -4238,13 +5139,19 @@ function animate(){
 
         updatePhysics(dt);
 
+        updateRemotePlayers(dt);
+
         updateHUD();
 
         updateSpeedLines(dt);
 
+        sendPlayerUpdate();
+
     }else{
 
         speedLinesEl.style.opacity="0";
+
+        updateRemotePlayers(dt);
     }
 
 
@@ -4270,21 +5177,44 @@ createPreview();
 animate();
 
 
+/*
+   Подключаем multiplayer
+   после полной инициализации игры.
+*/
+
+connectMultiplayer();
+
+
 /* =========================================================
    GLOBALS
 ========================================================= */
 
-window.startGame=startGame;
-window.restartGame=restartGame;
-window.resumeGame=resumeGame;
-window.quitGame=quitGame;
+window.startGame=
+    startGame;
 
-window.openPanel=openPanel;
-window.closePanels=closePanels;
+window.restartGame=
+    restartGame;
 
-window.selectCar=selectCar;
-window.buyUpgrade=buyUpgrade;
-window.resetSave=resetSave;
+window.resumeGame=
+    resumeGame;
+
+window.quitGame=
+    quitGame;
+
+window.openPanel=
+    openPanel;
+
+window.closePanels=
+    closePanels;
+
+window.selectCar=
+    selectCar;
+
+window.buyUpgrade=
+    buyUpgrade;
+
+window.resetSave=
+    resetSave;
 
 }
 
