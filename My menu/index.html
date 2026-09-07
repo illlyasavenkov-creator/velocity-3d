@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -682,8 +683,6 @@ select{
 
 <div id="game"></div>
 
-<!-- ================= MENU ================= -->
-
 <div id="menu">
 
     <div class="menuGlow"></div>
@@ -696,6 +695,7 @@ select{
     <div id="preview"></div>
 
     <div class="menuButtons">
+
         <button class="menuBtn primary" onclick="startGame()">
             DRIVE
         </button>
@@ -715,6 +715,7 @@ select{
         <button class="menuBtn" onclick="openPanel('records')">
             RECORDS
         </button>
+
     </div>
 
     <div class="menuInfo">
@@ -722,8 +723,6 @@ select{
     </div>
 
 </div>
-
-<!-- ================= GARAGE ================= -->
 
 <div id="garage" class="panel">
 
@@ -748,9 +747,7 @@ select{
                     <span>POWER</span>
                     <span>78</span>
                 </div>
-                <div class="bar">
-                    <i style="width:78%"></i>
-                </div>
+                <div class="bar"><i style="width:78%"></i></div>
             </div>
 
             <div class="stat">
@@ -758,9 +755,7 @@ select{
                     <span>SPEED</span>
                     <span>82</span>
                 </div>
-                <div class="bar">
-                    <i style="width:82%"></i>
-                </div>
+                <div class="bar"><i style="width:82%"></i></div>
             </div>
 
             <div class="stat">
@@ -768,9 +763,7 @@ select{
                     <span>HANDLING</span>
                     <span>70</span>
                 </div>
-                <div class="bar">
-                    <i style="width:70%"></i>
-                </div>
+                <div class="bar"><i style="width:70%"></i></div>
             </div>
         </div>
 
@@ -783,9 +776,7 @@ select{
                     <span>POWER</span>
                     <span>86</span>
                 </div>
-                <div class="bar">
-                    <i style="width:86%"></i>
-                </div>
+                <div class="bar"><i style="width:86%"></i></div>
             </div>
 
             <div class="stat">
@@ -793,9 +784,7 @@ select{
                     <span>SPEED</span>
                     <span>88</span>
                 </div>
-                <div class="bar">
-                    <i style="width:88%"></i>
-                </div>
+                <div class="bar"><i style="width:88%"></i></div>
             </div>
 
             <div class="stat">
@@ -803,9 +792,7 @@ select{
                     <span>HANDLING</span>
                     <span>77</span>
                 </div>
-                <div class="bar">
-                    <i style="width:77%"></i>
-                </div>
+                <div class="bar"><i style="width:77%"></i></div>
             </div>
         </div>
 
@@ -818,9 +805,7 @@ select{
                     <span>POWER</span>
                     <span>96</span>
                 </div>
-                <div class="bar">
-                    <i style="width:96%"></i>
-                </div>
+                <div class="bar"><i style="width:96%"></i></div>
             </div>
 
             <div class="stat">
@@ -828,9 +813,7 @@ select{
                     <span>SPEED</span>
                     <span>98</span>
                 </div>
-                <div class="bar">
-                    <i style="width:98%"></i>
-                </div>
+                <div class="bar"><i style="width:98%"></i></div>
             </div>
 
             <div class="stat">
@@ -838,16 +821,12 @@ select{
                     <span>HANDLING</span>
                     <span>84</span>
                 </div>
-                <div class="bar">
-                    <i style="width:84%"></i>
-                </div>
+                <div class="bar"><i style="width:84%"></i></div>
             </div>
         </div>
 
     </div>
 </div>
-
-<!-- ================= UPGRADES ================= -->
 
 <div id="upgrades" class="panel">
 
@@ -872,11 +851,9 @@ select{
                 <div class="upgradeName">ENGINE</div>
                 <div class="level" id="engineLevel">LV. 1</div>
             </div>
-
             <div class="upgradeDesc">
                 More acceleration and higher top speed.
             </div>
-
             <button class="buy" onclick="buyUpgrade('engine')">
                 UPGRADE — $500
             </button>
@@ -887,11 +864,9 @@ select{
                 <div class="upgradeName">TRANSMISSION</div>
                 <div class="level" id="transLevel">LV. 1</div>
             </div>
-
             <div class="upgradeDesc">
                 Faster gear changes and acceleration.
             </div>
-
             <button class="buy" onclick="buyUpgrade('trans')">
                 UPGRADE — $500
             </button>
@@ -902,11 +877,9 @@ select{
                 <div class="upgradeName">HANDLING</div>
                 <div class="level" id="handlingLevel">LV. 1</div>
             </div>
-
             <div class="upgradeDesc">
                 Sharper steering and better control.
             </div>
-
             <button class="buy" onclick="buyUpgrade('handling')">
                 UPGRADE — $500
             </button>
@@ -917,11 +890,9 @@ select{
                 <div class="upgradeName">BRAKES</div>
                 <div class="level" id="brakesLevel">LV. 1</div>
             </div>
-
             <div class="upgradeDesc">
                 Shorter braking distance.
             </div>
-
             <button class="buy" onclick="buyUpgrade('brakes')">
                 UPGRADE — $500
             </button>
@@ -932,11 +903,9 @@ select{
                 <div class="upgradeName">NITRO</div>
                 <div class="level" id="nitroLevel">LV. 1</div>
             </div>
-
             <div class="upgradeDesc">
                 More nitrous capacity and power.
             </div>
-
             <button class="buy" onclick="buyUpgrade('nitro')">
                 UPGRADE — $500
             </button>
@@ -947,11 +916,9 @@ select{
                 <div class="upgradeName">AERO</div>
                 <div class="level" id="aeroLevel">LV. 1</div>
             </div>
-
             <div class="upgradeDesc">
                 Improves high-speed stability.
             </div>
-
             <button class="buy" onclick="buyUpgrade('aero')">
                 UPGRADE — $500
             </button>
@@ -959,8 +926,6 @@ select{
 
     </div>
 </div>
-
-<!-- ================= SETTINGS ================= -->
 
 <div id="settings" class="panel">
 
@@ -979,9 +944,7 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">GRAPHICS</div>
-                <div class="settingDesc">
-                    Rendering quality
-                </div>
+                <div class="settingDesc">Rendering quality</div>
             </div>
 
             <select id="graphics">
@@ -994,9 +957,7 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">CAMERA DISTANCE</div>
-                <div class="settingDesc">
-                    Distance behind the car
-                </div>
+                <div class="settingDesc">Distance behind the car</div>
             </div>
 
             <input
@@ -1012,9 +973,7 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">STEERING</div>
-                <div class="settingDesc">
-                    Steering sensitivity
-                </div>
+                <div class="settingDesc">Steering sensitivity</div>
             </div>
 
             <input
@@ -1031,9 +990,7 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">CAMERA SHAKE</div>
-                <div class="settingDesc">
-                    High-speed camera movement
-                </div>
+                <div class="settingDesc">High-speed camera movement</div>
             </div>
 
             <select id="shake">
@@ -1045,9 +1002,7 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">SHOW CONTROLS</div>
-                <div class="settingDesc">
-                    Display controls during driving
-                </div>
+                <div class="settingDesc">Display controls during driving</div>
             </div>
 
             <select id="showControls">
@@ -1059,9 +1014,7 @@ select{
         <div class="setting">
             <div>
                 <div class="settingName">WEATHER</div>
-                <div class="settingDesc">
-                    Road and atmosphere
-                </div>
+                <div class="settingDesc">Road and atmosphere</div>
             </div>
 
             <select id="weather">
@@ -1082,8 +1035,6 @@ select{
     </div>
 </div>
 
-<!-- ================= RECORDS ================= -->
-
 <div id="records" class="panel">
 
     <button class="close" onclick="closePanels()">×</button>
@@ -1100,7 +1051,6 @@ select{
 
         <div class="upgrade">
             <div class="upgradeName">BEST DISTANCE</div>
-
             <div style="font-size:34px;margin-top:15px">
                 <span id="recordDistance">0</span> km
             </div>
@@ -1108,7 +1058,6 @@ select{
 
         <div class="upgrade">
             <div class="upgradeName">TOP SPEED</div>
-
             <div style="font-size:34px;margin-top:15px">
                 <span id="recordSpeed">0</span> km/h
             </div>
@@ -1116,7 +1065,6 @@ select{
 
         <div class="upgrade">
             <div class="upgradeName">CRASHES</div>
-
             <div style="font-size:34px;margin-top:15px">
                 <span id="recordCrashes">0</span>
             </div>
@@ -1124,7 +1072,6 @@ select{
 
         <div class="upgrade">
             <div class="upgradeName">RUNS</div>
-
             <div style="font-size:34px;margin-top:15px">
                 <span id="recordRuns">0</span>
             </div>
@@ -1132,8 +1079,6 @@ select{
 
     </div>
 </div>
-
-<!-- ================= HUD ================= -->
 
 <div id="hud">
 
@@ -1210,8 +1155,6 @@ select{
 <div id="speedVignette"></div>
 <div id="nitroEffect"></div>
 
-<!-- ================= PAUSE ================= -->
-
 <div id="pause">
 
     <div class="pauseBox">
@@ -1235,8 +1178,6 @@ select{
     </div>
 
 </div>
-
-<!-- ================= GAME OVER ================= -->
 
 <div id="gameOver">
 
@@ -1278,22 +1219,19 @@ select{
 
 /* =========================================================
    VELOCITY 3D
-   MULTIPLAYER CONFIG
+   MULTIPLAYER CONFIG — RENDER
 ========================================================= */
 
 /*
-   ПОКА ОСТАВЬ ТАК.
+   Render WebSocket server:
+   https://velocity-3d-server.onrender.com
 
-   После того как Render создаст сервер,
-   сюда поставим:
-
-   const MULTIPLAYER_URL =
-       "wss://ТВОЙ-СЕРВЕР.onrender.com";
-
-   Больше ничего менять не понадобится.
+   WebSocket:
+   wss://velocity-3d-server.onrender.com
 */
 
-const MULTIPLAYER_URL = "";
+const MULTIPLAYER_URL =
+    "wss://velocity-3d-server.onrender.com";
 
 
 /* =========================================================
@@ -2305,52 +2243,29 @@ function createCar(
         });
 
 
-    /* MAIN BODY */
-
     box(
         car,
-        2.05,
-        .62,
-        4.55,
-        0,
-        .72,
-        0,
-        bodyMat,
-        .16
+        2.05,.62,4.55,
+        0,.72,0,
+        bodyMat,.16
     );
 
 
-    /* LOWER BODY */
-
     box(
         car,
-        2.12,
-        .34,
-        3.6,
-        0,
-        .51,
-        -.05,
-        darkMat,
-        .1
+        2.12,.34,3.6,
+        0,.51,-.05,
+        darkMat,.1
     );
 
 
-    /* HOOD */
-
     box(
         car,
-        1.85,
-        .16,
-        1.25,
-        0,
-        1.08,
-        -1.45,
-        bodyMat,
-        .07
+        1.85,.16,1.25,
+        0,1.08,-1.45,
+        bodyMat,.07
     );
 
-
-    /* CABIN */
 
     const cabinShape=
         new THREE.Shape();
@@ -2398,60 +2313,34 @@ function createCar(
     car.add(cabin);
 
 
-    /* ROOF */
-
     box(
         car,
-        1.35,
-        .1,
-        1.75,
-        0,
-        1.85,
-        .1,
-        darkMat,
-        .04
+        1.35,.1,1.75,
+        0,1.85,.1,
+        darkMat,.04
     );
 
 
-    /* BUMPERS */
-
     box(
         car,
-        2.12,
-        .24,
-        .28,
-        0,
-        .55,
-        -2.25,
-        darkMat,
-        .06
+        2.12,.24,.28,
+        0,.55,-2.25,
+        darkMat,.06
     );
 
     box(
         car,
-        2.12,
-        .24,
-        .28,
-        0,
-        .55,
-        2.25,
-        darkMat,
-        .06
+        2.12,.24,.28,
+        0,.55,2.25,
+        darkMat,.06
     );
 
 
-    /* FRONT GRILLE */
-
     box(
         car,
-        1.35,
-        .1,
-        .045,
-        0,
-        .73,
-        -2.43,
-        blackMat,
-        .02
+        1.35,.1,.045,
+        0,.73,-2.43,
+        blackMat,.02
     );
 
 
@@ -2463,18 +2352,12 @@ function createCar(
 
         box(
             car,
-            .035,
-            .21,
-            .045,
-            x,
-            .73,
-            -2.43,
+            .035,.21,.045,
+            x,.73,-2.43,
             darkMat
         );
     }
 
-
-    /* HEADLIGHTS */
 
     for(
         const x of [-.7,.7]
@@ -2482,19 +2365,12 @@ function createCar(
 
         box(
             car,
-            .4,
-            .16,
-            .06,
-            x,
-            .9,
-            -2.3,
-            whiteLightMat,
-            .04
+            .4,.16,.06,
+            x,.9,-2.3,
+            whiteLightMat,.04
         );
     }
 
-
-    /* REAR LIGHTS */
 
     for(
         const x of [-.72,.72]
@@ -2502,19 +2378,12 @@ function createCar(
 
         box(
             car,
-            .48,
-            .15,
-            .06,
-            x,
-            .88,
-            2.3,
-            redLightMat,
-            .03
+            .48,.15,.06,
+            x,.88,2.3,
+            redLightMat,.03
         );
     }
 
-
-    /* WHEELS */
 
     const wheelGeo=
         new THREE.CylinderGeometry(
@@ -2581,20 +2450,13 @@ function createCar(
     }
 
 
-    /* SPOILER */
-
     if(isPlayer){
 
         box(
             car,
-            1.65,
-            .09,
-            .16,
-            0,
-            1.45,
-            1.85,
-            darkMat,
-            .03
+            1.65,.09,.16,
+            0,1.45,1.85,
+            darkMat,.03
         );
 
         for(
@@ -2603,19 +2465,13 @@ function createCar(
 
             box(
                 car,
-                .08,
-                .32,
-                .08,
-                x,
-                1.28,
-                1.85,
+                .08,.32,.08,
+                x,1.28,1.85,
                 darkMat
             );
         }
     }
 
-
-    /* MIRRORS */
 
     for(
         const x of [-1.13,1.13]
@@ -2623,19 +2479,12 @@ function createCar(
 
         box(
             car,
-            .18,
-            .12,
-            .3,
-            x,
-            1.2,
-            -.55,
-            darkMat,
-            .03
+            .18,.12,.3,
+            x,1.2,-.55,
+            darkMat,.03
         );
     }
 
-
-    /* EXHAUST */
 
     for(
         const x of [-.62,.62]
@@ -3655,32 +3504,15 @@ function updateRemotePlayer(data){
         Number(data.speed)||0;
 
 
-    /*
-       У каждого игрока своя дистанция.
-       Поэтому здесь рассчитываем положение
-       относительно нашей дистанции.
-    */
-
     const relativeDistance=
         remote.distance-
         distance;
 
 
-    /*
-       20 — визуальный масштаб дистанции.
-       Чем больше разница дистанции,
-       тем дальше машина.
-    */
-
     remote.targetZ=
         player.position.z-
         relativeDistance*20;
 
-
-    /*
-       Не даём игрокам улетать
-       на бесконечную дистанцию.
-    */
 
     remote.targetZ=
         THREE.MathUtils.clamp(
@@ -3749,11 +3581,6 @@ function updateRemotePlayers(dt){
             );
 
 
-        /*
-           Если игрок очень далеко,
-           прячем его до следующего обновления.
-        */
-
         mesh.visible=
             Math.abs(
                 mesh.position.z-
@@ -3782,11 +3609,6 @@ function removeRemotePlayer(id){
         remote.mesh
     );
 
-
-    /*
-       Полностью освобождаем геометрию
-       и материалы машины.
-    */
 
     remote.mesh.traverse(
         obj=>{
@@ -3824,6 +3646,7 @@ function removeRemotePlayer(id){
 
 
     remotePlayers.delete(id);
+
 
     console.log(
         "[VELOCITY] Player left:",
@@ -3892,10 +3715,6 @@ function startGame(){
 
     spawnTraffic();
 
-
-    /*
-       Старых удалённых игроков убираем.
-    */
 
     for(
         const id of remotePlayers.keys()
@@ -3978,13 +3797,6 @@ function quitGame(){
     nitroEffect.style.opacity=0;
 
 
-    /*
-       Останавливаем отправку,
-       но сам WebSocket оставляем подключенным,
-       чтобы следующий DRIVE работал сразу.
-    */
-
-
     menu.style.display="block";
 }
 
@@ -4052,11 +3864,6 @@ function crash(){
     saveGame();
 
 
-    /*
-       Отправляем последнее положение
-       перед окончанием заезда.
-    */
-
     sendPlayerUpdate(true);
 
 
@@ -4076,6 +3883,7 @@ function crash(){
 ========================================================= */
 
 const keys={};
+
 
 addEventListener(
     "keydown",
@@ -4174,8 +3982,6 @@ function updatePhysics(dt){
         tb;
 
 
-    /* THROTTLE */
-
     if(
         keys.KeyW||
         keys.ArrowUp
@@ -4195,8 +4001,6 @@ function updatePhysics(dt){
     }
 
 
-    /* BRAKE */
-
     if(
         keys.KeyS||
         keys.ArrowDown
@@ -4210,8 +4014,6 @@ function updatePhysics(dt){
             );
     }
 
-
-    /* NITRO */
 
     const usingNitro=
         keys.Space&&
@@ -4257,8 +4059,6 @@ function updatePhysics(dt){
     }
 
 
-    /* ACCELERATION */
-
     const accel=
         c.accel*
         eb*
@@ -4286,8 +4086,6 @@ function updatePhysics(dt){
             );
     }
 
-
-    /* STEERING */
 
     let si=0;
 
@@ -4349,8 +4147,6 @@ function updatePhysics(dt){
         );
 
 
-    /* STATS */
-
     distance+=
         speed*
         dt/
@@ -4366,8 +4162,6 @@ function updatePhysics(dt){
             speed;
     }
 
-
-    /* CAR ROLL */
 
     player.rotation.z=
         THREE.MathUtils.lerp(
@@ -4385,8 +4179,6 @@ function updatePhysics(dt){
         );
 
 
-    /* WORLD MOVEMENT */
-
     let movement=
         (speed/3.6)*
         dt*
@@ -4399,14 +4191,11 @@ function updatePhysics(dt){
     }
 
 
-    /* ROAD */
-
     roadSegments.forEach(
         s=>{
 
             s.position.z+=
                 movement;
-
 
             if(
                 s.position.z>
@@ -4414,21 +4203,17 @@ function updatePhysics(dt){
             ){
 
                 s.position.z-=
-                    SEG_LEN*
-                    SEG_COUNT;
+                    SEG_LEN*SEG_COUNT;
             }
         }
     );
 
-
-    /* SCENERY */
 
     sceneryGroup.children.forEach(
         o=>{
 
             o.position.z+=
                 movement;
-
 
             if(
                 o.position.z>
@@ -4442,8 +4227,6 @@ function updatePhysics(dt){
         }
     );
 
-
-    /* TRAFFIC */
 
     traffic.forEach(
         t=>{
@@ -4499,8 +4282,6 @@ function updatePhysics(dt){
             }
 
 
-            /* COLLISION */
-
             if(
                 Math.abs(
                     player.position.x-
@@ -4519,10 +4300,6 @@ function updatePhysics(dt){
         }
     );
 
-
-    /* =====================================================
-       RAIN
-    ===================================================== */
 
     if(rainGroup.visible){
 
@@ -4576,10 +4353,6 @@ function updatePhysics(dt){
     }
 
 
-    /* =====================================================
-       HIGH SPEED CAMERA
-    ===================================================== */
-
     const ratio=
         THREE.MathUtils.clamp(
             speed/350,
@@ -4604,7 +4377,6 @@ function updatePhysics(dt){
                 dt
             )
         );
-
 
     camera.updateProjectionMatrix();
 
@@ -4804,11 +4576,6 @@ function selectCar(i){
     }
 
 
-    /*
-       Если игрок уже находится в игре,
-       меняем и его машину.
-    */
-
     if(player){
 
         const oldPosition=
@@ -4816,6 +4583,7 @@ function selectCar(i){
 
         const oldRotation=
             player.rotation.clone();
+
 
         scene.remove(
             player
@@ -4836,6 +4604,7 @@ function selectCar(i){
         player.rotation.copy(
             oldRotation
         );
+
 
         scene.add(
             player
@@ -5177,10 +4946,9 @@ createPreview();
 animate();
 
 
-/*
-   Подключаем multiplayer
-   после полной инициализации игры.
-*/
+/* =========================================================
+   CONNECT MULTIPLAYER
+========================================================= */
 
 connectMultiplayer();
 
@@ -5222,3 +4990,4 @@ window.resetSave=
 
 </body>
 </html>
+```
